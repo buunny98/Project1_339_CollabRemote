@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    /* adding the border box model */
+    /*
+    took the help from IAT 235 Notes
+    */
+}
+
+body {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+
+.navcontainer {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.header {
+  box-sizing: border-box;
+  background: rgb(22, 44, 58);
+  padding: 20px;
+}
+
+.header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  font-family: Cinzel;
+  color: white;
+  float: left;
+	padding-left: 40px;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  font-family: Brandon Grotesque;
+  display: inline-block;
+  margin-left: 70px;
+	margin-right: 20px;
+  padding-top: 23px;
+  position: relative;
+}
+
+nav a {
+  color: RGB(219, 204, 181);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: RGB(181, 104, 76);
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: RGB(181, 104, 76);
+  position: absolute;
+  top: 0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: rgb(243, 243, 243);
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+}
+
+.centered {
+    position: absolute;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

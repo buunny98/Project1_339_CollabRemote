@@ -3,11 +3,9 @@
   Default styling for the style guide
 */
 body {
-  margin: 0;
-  font-family: sans-serif;
-  padding: 2rem;
-  min-height: 100vh;
-  display: flex;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 
 }
 
@@ -313,9 +311,7 @@ RADIO BUTTON WITH LABEL*/
 
 /*[START]
 NUMBERED LIST*/
-.box{
 
-}
 
 /*[END]
 NUMBERED LIST*/
@@ -429,7 +425,6 @@ NUMBERED LIST*/
   margin: 55px 20px 30px 10px;
 }
 
-}
 
 .box{
   width: 300px;
@@ -493,14 +488,13 @@ NAVIGATION BAR*/
 
 .navcontainer {
 	width: 80%;
-  margin: 0 auto;
-
+	margin: 0 auto;
 }
 
 .header {
   box-sizing: border-box;
   background: rgb(22, 44, 58);
-  padding: 50px;
+  padding: 20px;
 }
 
 .header::after {
@@ -513,6 +507,7 @@ NAVIGATION BAR*/
   font-family: Cinzel;
   color: white;
   float: left;
+	padding-left: 40px;
 }
 
 nav {
@@ -529,6 +524,7 @@ nav li {
   font-family: Brandon Grotesque;
   display: inline-block;
   margin-left: 70px;
+	margin-right: 20px;
   padding-top: 23px;
   position: relative;
 }
